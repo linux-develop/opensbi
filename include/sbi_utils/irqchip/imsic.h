@@ -13,7 +13,7 @@
 
 #include <sbi/sbi_types.h>
 
-#define IMSIC_MMIO_PAGE_SHIFT		12
+#define IMSIC_MMIO_PAGE_SHIFT		14
 #define IMSIC_MMIO_PAGE_SZ		(1UL << IMSIC_MMIO_PAGE_SHIFT)
 
 #define IMSIC_MAX_REGS			16

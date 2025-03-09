@@ -40,7 +40,7 @@
 /** Offset of hart_index2id in struct sbi_platform */
 #define SBI_PLATFORM_HART_INDEX2ID_OFFSET (0x60 + (__SIZEOF_POINTER__ * 2))
 
-#define SBI_PLATFORM_TLB_RANGE_FLUSH_LIMIT_DEFAULT		(1UL << 12)
+#define SBI_PLATFORM_TLB_RANGE_FLUSH_LIMIT_DEFAULT		(1UL << 14)
 
 #ifndef __ASSEMBLER__
 
