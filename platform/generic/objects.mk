@@ -28,10 +28,10 @@ ifeq ($(PLATFORM_RISCV_XLEN), 32)
   # This needs to be 4MB aligned for 32-bit system
   FW_JUMP_OFFSET=0x400000
 else
-  # This needs to be 2MB aligned for 64-bit system
-  FW_JUMP_OFFSET=0x200000
+  # This needs to be 32MB aligned for 64-bit system
+  FW_JUMP_OFFSET=0x2000000
 endif
-FW_JUMP_FDT_OFFSET=0x2200000
+FW_JUMP_FDT_OFFSET=0x4000000
 FW_PAYLOAD=y
 ifeq ($(PLATFORM_RISCV_XLEN), 32)
   # This needs to be 4MB aligned for 32-bit system
